@@ -1,0 +1,184 @@
+* {
+    font-family: "Times New Roman", Times, serif;
+}
+
+#personal-info {
+    background-color:white;
+    text-align: center;
+}
+
+#name {
+    color: black;
+}
+
+#umd {
+    position:absolute;
+    padding: 5px;
+    width: 50px;
+    top: 16px;
+    right: 5px;
+}
+
+#work-exp {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.company {
+    margin: 0px;
+    padding: 0px;
+}
+
+.project {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards__item {
+    display: flex;
+    padding: 1rem;
+    }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .card__title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .card__text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.0;
+    margin-bottom: 1.5 rem;
+  }
+  
+  .card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skills {
+    width: 500px;
+    margin: 60px auto;
+    list-style: none;
+}
+
+.skills li{
+    margin: 20px 0;
+}
+
+.bar {
+    background:lightgrey;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    overflow:hidden;
+    border-radius:3px;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+    height: 2px;
+    float:left;
+    background: #2187e7;
+}
+
+.python {
+    width: 85%
+}
+
+.sql {
+    width: 75% 
+}
+
+.r {
+    width: 75%
+}
+
+.html {
+    width: 50%
+}
+
+.css {
+    width: 50%
+}
+
+.c {
+    width: 40%
+}
+
+.s5 {
+    height: 10vh;
+    background-color: white;
+    margin-top: 50px;
+  }
+  
+  .s5 hr {
+    border-top: 1px solid black;
+    width: 50%;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    width: 50%;
+  }
+  
+  .s5 a {
+    font-size: 50px;
+  }
+  
+  .far, .fab {
+    color:black;
+  }
+  
+  .fa-linkedin:hover {
+    color: #2867B2;
+    transition: 0.3s;
+  }
+  
+  .fa-github:hover {
+    color: #6f42c1;
+    transition: 0.3s;
+  }
+  
+  .fa-envelope:hover {
+    color: #d44638;
+    transition: 0.3s;
+  }
