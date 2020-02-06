@@ -150,14 +150,15 @@
   
   .s5 hr {
     border-top: 1px solid black;
-    width: 50%;
+    width: 60%;
   }
   
   .icons {
     display: flex;
     justify-content: center;
     align-content: space-between;
-    width: 50%;
+    width: 105%;
+  
   }
   
   .s5 a {
@@ -166,6 +167,7 @@
   
   .far, .fab {
     color:black;
+    padding-right: 30px;
   }
   
   .fa-linkedin:hover {
