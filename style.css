@@ -55,17 +55,18 @@ margin-right: auto;
 #work-exp, #education {
   display: flex;
   flex-direction: column;
-  padding-left: 90px;
+  padding-left: 30px;
   padding-bottom: 30px;
   padding-top: 30px;
+  list-style-type: circle;
+}
+
+.circle-list {
+  list-style-type: circle;
 }
 
 .section-header {
   text-align: center;
-}
-
-.degree, .role-company {
-  color: #E21833;
 }
 
 .project {
@@ -97,13 +98,14 @@ margin-right: auto;
 }
 
 .card__content {
+  font-size: 1 rem;
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
   padding: 1rem;
 }
 
-.card__title {
+.card__title, .degree, .role-company {
   font-size: 1.25rem;
   font-weight: 300;
   letter-spacing: 2px;
@@ -112,8 +114,9 @@ margin-right: auto;
 }
 
 .card__text {
+  padding-left: 10px;
   flex: 1 1 auto;
-  font-size: 0.875rem;
+  font-size: 1 rem;
   line-height: 1.0;
   margin-bottom: 1.5 rem;
 }
