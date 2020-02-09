@@ -3,29 +3,28 @@
   ;
 }
 
-#personal-info {
-  background-color:white;
-  text-align: center;
-}
-
 hr { 
 width: 80%
 }
 
 .text {
-margin-left: 30px;
+margin-left: 40px;
 text-align: center;
 padding-bottom: 30px;
 padding-top: 30px;
 }
 
 #aside{
-background-color: rgb(179, 73, 73);
+background-color: #E21833;
 padding: 10px;
-width: 240px;
-height: 15.5in;
+width: 250px;
+height: 19in;
 float: left;
 color: #eee;
+}
+
+.aside-header {
+  text-align: center;
 }
 
 #aside hr {
@@ -43,11 +42,17 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#name {
-  color: black;
+#information {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-#work-exp {
+#jose {
+  color: #E21833;
+  display: inline;
+}
+
+#work-exp, #education {
   display: flex;
   flex-direction: column;
   padding-left: 90px;
@@ -59,9 +64,8 @@ margin-right: auto;
   text-align: center;
 }
 
-.company {
-  margin: 0px;
-  padding: 0px;
+.degree, .role-company {
+  color: #E21833;
 }
 
 .project {
@@ -75,7 +79,7 @@ margin-right: auto;
   justify-content: center;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 2px;
 }
 
 .cards__item {
@@ -104,6 +108,7 @@ margin-right: auto;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #E21833;
 }
 
 .card__text {
@@ -129,22 +134,18 @@ margin-right: auto;
   list-style: none;
 }
 
-.skills li{
-  margin: 20px 0;
-}
-
 .bar {
   background:white;
   display: block;
-  height: 2px;
-  border: 1px solid rgba(0,0,0,0.3);
+  height: 10px;
+  border: 1.5px solid rgba(0,0,0,0.3);
   overflow:hidden;
   border-radius:3px;
   box-shadow: 0 0 10px grey;
 }
 
 .bar span{
-  height: 2px;
+  height: 10px;
   float:left;
   background: grey;
 }
