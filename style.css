@@ -18,7 +18,7 @@ padding-top: 30px;
 background-color: #E21833;
 padding: 10px;
 width: 250px;
-height: 19in;
+height: 25.5in;
 float: left;
 color: #eee;
 }
@@ -92,7 +92,7 @@ margin-right: auto;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
 }
 
@@ -137,15 +137,16 @@ margin-right: auto;
 .bar {
   background:white;
   display: block;
-  height: 10px;
-  border: 1.5px solid rgba(0,0,0,0.3);
+  height: 20px;
+  border: 2px solid rgba(0,0,0,0.3);
   overflow:hidden;
   border-radius:3px;
   box-shadow: 0 0 10px grey;
+  border-radius: 25px
 }
 
 .bar span{
-  height: 10px;
+  height: 20px;
   float:left;
   background: grey;
 }
@@ -178,7 +179,7 @@ width: 100%;
 
 .s5 hr {
   border-top: 1px solid black;
-  width: 40%;
+  width: 80%;
 }
 
 .icons {
