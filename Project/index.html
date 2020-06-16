@@ -2,22 +2,62 @@
 <html>
   <head lang="en">
   <meta charset="UTF-8">
-  <script type="text/javascript"
-	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
     <script type="text/javascript">
-        function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-                url = "https://public.tableau.com/views/RegionalSampleWorkbook/Storms",
-                options = {
-                    hideTabs: true
-                };
+      function initViz() {
+        var jsonData = [
+    {
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.027610892429947853,
+            "Negative": 0.20518945157527924,
+            "Neutral": 0.7670494914054871,
+            "Mixed": 0.00015012786025181413
+    }},
+        
+    {
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.3018544912338257,
+            "Negative": 0.03708114102482796,
+            "Neutral": 0.6610554456710815,
+            "Mixed": 8.934117431635968e-06
+        }},
+    {
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.0930376872420311,
+            "Negative": 0.16205386817455292,
+            "Neutral": 0.7448704838752747,
+            "Mixed": 3.7955542211420834e-05
+        }},
+    {
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.00986269861459732,
+            "Negative": 0.00013495721213985234,
+            "Neutral": 0.9900007247924805,
+            "Mixed": 1.6557078197365627e-06
+        }},
+    {
+        "Sentiment": "POSITIVE",
+        "SentimentScore": {
+            "Positive": 0.5030083060264587,
+            "Negative": 0.0057899183593690395,
+            "Neutral": 0.4911988079547882,
+            "Mixed": 2.9915740924479906e-06
+        }}
+]
+         
 
-            var viz = new tableau.Viz(containerDiv, url, options);
-            // Create a viz object and embed it in the container div.
+        
 
-            document.getElementById('results').innerHTML = "Your keyword was recieved";
-        }
+        var myJSON = JSON.stringify(jsonData)
+        document.getElementById('jsonData').innerHTML = myJSON
+        document.getElementById('results').innerHTML = "Seems as though 'Ronaldo' has a Neutral Sentiment at the moment";
+
+      }
     </script>
+    
   </head>
 
   <body>
@@ -27,9 +67,13 @@
   </form>
   <input type="submit" onclick="initViz();"><br/>
   <label>Your input: </label>
-  <p><span id='results'></span></p>
+  <p>
+    <span id='results'></span>
+  </p>
+
+  <span id= 'jsonData'> </span>
   
-  <div id="vizContainer" style="width:800px; height:700px;"></div>
+
 
 </body>
 

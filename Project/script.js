@@ -1,6 +1,6 @@
-
-function myFunction(){
+function showInput() {
     document.getElementById('results').innerHTML = 
-        document.getElementById("keyword-search").value;
+      "Your keyword was recieved";
 }
+
 
