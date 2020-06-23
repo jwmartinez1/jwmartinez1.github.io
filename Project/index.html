@@ -4,57 +4,20 @@
   <meta charset="UTF-8">
     <script type="text/javascript">
       function initViz() {
-        var jsonData = [
-    {
-        "Sentiment": "NEUTRAL",
-        "SentimentScore": {
-            "Positive": 0.027610892429947853,
-            "Negative": 0.20518945157527924,
-            "Neutral": 0.7670494914054871,
-            "Mixed": 0.00015012786025181413
-    }},
+        const url = "https://wy373txt2g.execute-api.us-east-1.amazonaws.com/default/test"
+        var request = new XMLHttpRequest();
+        request.open('GET', url , true);
+        console.log( "You successfully connected to the API: " + url)
+        request.addEventListener("load", loadData);
+        request.send();
         
-    {
-        "Sentiment": "NEUTRAL",
-        "SentimentScore": {
-            "Positive": 0.3018544912338257,
-            "Negative": 0.03708114102482796,
-            "Neutral": 0.6610554456710815,
-            "Mixed": 8.934117431635968e-06
-        }},
-    {
-        "Sentiment": "NEUTRAL",
-        "SentimentScore": {
-            "Positive": 0.0930376872420311,
-            "Negative": 0.16205386817455292,
-            "Neutral": 0.7448704838752747,
-            "Mixed": 3.7955542211420834e-05
-        }},
-    {
-        "Sentiment": "NEUTRAL",
-        "SentimentScore": {
-            "Positive": 0.00986269861459732,
-            "Negative": 0.00013495721213985234,
-            "Neutral": 0.9900007247924805,
-            "Mixed": 1.6557078197365627e-06
-        }},
-    {
-        "Sentiment": "POSITIVE",
-        "SentimentScore": {
-            "Positive": 0.5030083060264587,
-            "Negative": 0.0057899183593690395,
-            "Neutral": 0.4911988079547882,
-            "Mixed": 2.9915740924479906e-06
-        }}
-]
-         
-
-        
-
-        var myJSON = JSON.stringify(jsonData)
-        document.getElementById('jsonData').innerHTML = myJSON
+        //document.getElementById('jsonData').innerHTML = data;
         document.getElementById('results').innerHTML = "Seems as though 'Ronaldo' has a Neutral Sentiment at the moment";
+      }
 
+      function loadData(){
+        var data = JSON.parse(this.response);
+        document.getElementById('jsonData').innerText = data;
       }
     </script>
     
