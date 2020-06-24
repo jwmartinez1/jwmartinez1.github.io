@@ -16,7 +16,7 @@
       }
 
       function loadData(){
-        var data = JSON.parse(this.response);
+        var data = JSON.stringify(JSON.parse(this.response));
         document.getElementById('jsonData').innerText = data;
       }
     </script>
