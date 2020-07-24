@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
     <script type="text/javascript">
       function initViz() {
-        const url = "https://wy373txt2g.execute-api.us-east-1.amazonaws.com/default/test"
+        const url = "https://bsj0pwvapj.execute-api.us-east-1.amazonaws.com/prod/?keywordSearch=Jose";
+        console.log(url);
         var request = new XMLHttpRequest();
         request.open('GET', url , true);
         console.log( "You successfully connected to the API: " + url)
         request.addEventListener("load", loadData);
         request.send();
         
-        //document.getElementById('jsonData').innerHTML = data;
-        document.getElementById('results').innerHTML = "Seems as though 'Ronaldo' has a Neutral Sentiment at the moment";
       }
 
       function loadData(){
@@ -30,9 +29,6 @@
   </form>
   <input type="submit" onclick="initViz();"><br/>
   <label>Your input: </label>
-  <p>
-    <span id='results'></span>
-  </p>
 
   <span id= 'jsonData'> </span>
   

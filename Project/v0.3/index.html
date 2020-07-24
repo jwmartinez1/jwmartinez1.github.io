@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+      function initViz() {
+        const base_url = "https://bsj0pwvapj.execute-api.us-east-1.amazonaws.com/prod/?keywordSearch=";
+        const userSearch = document.getElementById("keyword").value;
+        const API_url = base_url + userSearch;
+        console.log(API_url);
+
+        var request = new XMLHttpRequest();
+        request.open('GET', API_url , true);
+        console.log( "You successfully connected to the API: " + API_url);
+        request.addEventListener("load", loadData);
+        request.send();
+      }
+
+      function loadData(){
+        var data = JSON.stringify(JSON.parse(this.response), null, 2);
+        document.getElementById('jsonData').innerText = data;
+      }
+    </script>
+    
+  </head>
+
+  <body>
+    <form>
+      <label><b>Enter your Keyword</b></label>
+      <input type="text" name="keywordSearch" id="keyword">
+    </form>
+    <input type="submit" onclick="initViz();"><br/>
+    
+
+    <span id= 'jsonData'> </span>
+</body>
+
+
+
+</html>
