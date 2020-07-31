@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    
+    <ul id="navigation-buttons">
+      <li class= "link-to"><a href="https://github.com/jwmartinez1/jwmartinez1.github.io/tree/master/Project">Code</a></li>
+      <li class= "link-to"><a href="#blog">Blog Post</a></li>
+    </ul>
+
+    <h1 id="website-name">Sentiment Analysis for Twitter</h1>
+    <div id="abt-website">
+      "This tool will take whatever keyword you enter and return both an analyzed
+       response and some information about the tweets."
+    </div>
+    
+    
+   
+    <form id= "search-keyword" onsubmit="return false">
+      <input type="text" name="keywordSearch" id="keyword" placeholder="Enter your keyword here">
+      <input type="submit" onclick="loadData();" id="submit">
+    </form>
+    
+
+    <table id = "tweetData" >
+        <thead>
+           <tr> 
+            <th>Username</th>
+            <th>Date Created</th>
+            <th>Tweet Text</th>
+            <th>Retweet Count</th>
+            <th>Favorite Count</th>
+            <th>Sentiment</th>
+          </tr>
+        </thead>
+        <tbody id="tdata">
+          
+        </tbody>
+    </table>
+    
+    <script type="text/javascript">
+      
+      const tweetData = document.querySelector("#tweetData > tbody");
+
+      function loadData() {
+        const base_url = "https://bsj0pwvapj.execute-api.us-east-1.amazonaws.com/prod/?keywordSearch=";
+        const userSearch = document.getElementById("keyword").value;
+        const API_url = base_url + userSearch;
+        console.log(API_url);
+
+        const request = new XMLHttpRequest();
+        request.open('GET', API_url , true);
+        request.onload = function() {
+        
+          const data = JSON.parse(this.response)
+          for (var i in data) {
+            var row = ` <tr> 
+                          <td>${data[i].user_name}</td>
+                          <td>${data[i].date_created}</td>
+                          <td>${data[i].tweet_text}</td>
+                          <td>${data[i].retweet_count}</td>
+                          <td>${data[i].favorite_count}</td>
+                          <td>${data[i].sentiment}</>
+                        </tr>`
+
+            const table = document.getElementById('tdata')
+            table.innerHTML += row
+          }  
+        };
+
+        request.send();
+      }
+
+    </script>
+</body>
+
+
+
+</html>

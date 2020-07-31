@@ -1,0 +1,98 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#navigation-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.link-to {
+  float: right;
+}
+
+.link-to a {
+  display: block;
+  padding: 10px;
+}
+
+#website-name{
+  text-align: center;
+  padding: 10px;
+}
+
+#abt-website {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#search-keyword {
+  float: center;
+  text-align: center;
+
+}
+
+#keyword {
+  display: flex;
+  float: center;
+  text-align: center;
+}
+
+#tweetData {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tweetData td, #tweetData th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tweetData th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+#tweetData td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: black;
+}
+
+#search-keyword {
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#keyword {
+  width: 95%;
+  border: 3px solid black;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  outline: none;
+  color: black;
+  float: center;
+}
+
+#submit {
+  width: 50px;
+  height: 36px;
+  border: 1px solid black;
+  background: grey;
+  text-align: left;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
