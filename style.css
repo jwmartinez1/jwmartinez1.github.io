@@ -54,6 +54,24 @@ margin-right: auto;
   display: inline;
 }
 
+#navigation-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.link-to {
+  float: right;
+  font-size: 20px;
+  color: #E21833;
+}
+
+.link-to a {
+  display: block;
+  padding: 10px;
+}
+
 #work-exp, #education {
   display: flex;
   flex-direction: column;
