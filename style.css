@@ -18,9 +18,11 @@ padding-top: 30px;
 background-color: #E21833;
 padding: 10px;
 width: 250px;
-height: 25.5in;
+height: 31in;
 float: left;
 color: #eee;
+top: 0px;   
+bottom: 30px; 
 }
 
 .aside-header {

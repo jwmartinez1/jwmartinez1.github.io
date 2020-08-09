@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Hotjar Tracking Code for https://jwmartinez1.github.io/ -->
+    <script>
+      (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:1937641,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
   </head>
  
   <body>
@@ -27,10 +38,13 @@
             <h4>C++</h4><span class="bar"><span class="rat5"></span></span>
           </li>
           <li>
-            <h4>CSS</h4><span class="bar"><span class="rat4"></span></span>
+            <h4>CSS</h4><span class="bar"><span class="rat3"></span></span>
           </li>
           <li>
-            <h4>HTML</h4><span class="bar"><span class="rat4"></span></span>
+            <h4>HTML</h4><span class="bar"><span class="rat3"></span></span>
+          </li>
+          <li>
+            <h4>Javascript</h4><span class="bar"><span class="rat5"></span></span>
           </li>
             <h4>Python</h4><span class="bar"><span class="rat2"></span></span>
           </li>
@@ -42,6 +56,27 @@
           </li>   
         </div>
     
+    <hr>
+      <h3 class="section-header">Cloud Skills</h3>
+    <hr>
+      <div class="skills">
+        <li>
+          <h4>AWS API Gateway</h4><span class="bar"><span class="rat3"></span></span>
+        </li>
+        <li>
+          <h4>AWS Comprehend</h4><span class="bar"><span class="rat2"></span></span>
+        </li>
+        <li>
+          <h4>AWS Lambda</h4><span class="bar"><span class="rat2"></span></span>
+        </li>
+        <li>
+          <h4>AWS API S3</h4><span class="bar"><span class="rat3"></span></span>
+        </li>
+        <li>
+          <h4>Tableau</h4><span class="bar"><span class="rat2"></span></span>
+        </li>
+      </div>
+
     <hr>
       <h3 class="section-header">Software Skills</h3>
     <hr>
@@ -62,13 +97,13 @@
             <h4>OpenRefine</h4><span class="bar"><span class="rat2"></span></span>
           </li>
           <li>
+            <h4>Postman</h4><span class="bar"><span class="rat3"></span></span>
+          </li>
+          <li>
             <h4>Qualtrics</h4><span class="bar"><span class="rat4"></span></span>
           </li>
           <li>
             <h4>R Studio</h4><span class="bar"><span class="rat3"></span></span>
-          </li>
-          <li>
-            <h4>Tableau</h4><span class="bar"><span class="rat2"></span></span>
           </li>
           <li>
             <h4>Visual Studio Code</h4><span class="bar"><span class="rat2"></span></span>
@@ -107,7 +142,7 @@
         <div id="work-exp">
           <center><p class="role-company">Executive Resource Intern | National Nuclear Security Administration
             <br> May 2018 - Oct 2018</p>
-  
+
           </center>
             <ul class="circle-list">
               <li>Assisted in the creation of the Executive Resource webpages;</li>
@@ -122,6 +157,28 @@
     <h2 class= "section-header">Projects</h2>
     <hr>
     <ul class="cards">
+      <li class="cards__item">
+        <div class="card" id="z">
+            <div class="card__image"></div>
+            <div class="card__content">
+                <center>
+                    <div class="card__title"> 
+                      <a href = "https://jwmartinez1.github.io/Project/v0.4/"> Sentiment Analysis using Tweets</a>
+                    </div>
+                </center>
+                    <p class="card__text">
+                      Conducted Sentiment Analysis of Tweets using serverless AWS services to support the back-end of an HTML site.  
+                    <ul class="circle-list">
+                        <li>Created sequence diagrams using ZenUML, and a mockup of Website using Moqup as apart of the initial research phase;</li>
+                        <li>AWS Lambda hosted the Python Script used to connect to AWS Comprehend, AWS API Gateway, AWS S3, and the Twitter API;</li>
+                        <li>Used Python to connect to the necessary APIs, extract Tweet data using the Tweepy library, format JSON data, and return a response back to an API endpoint;</li>
+                        <li>The front-end of the website is made using HTML and is comprised of two main components: a form which submits a user search, and a table to display the results;</li>
+                        <li>Javascript is used to connect the website to the API endpoint, parse the JSON data, and then append the data to the HTML table.</li>
+                    </ul>
+                    </p>
+            </div>
+        </div>
+    </li>
       <li class="cards__item">
           <div class="card" id="z">
               <div class="card__image"></div>
@@ -138,9 +195,8 @@
                           <li>Utilized Python to read in datasets, create data frames using Pandas library, and create visualization using Matplotlib library;</li>
                           <li>To supplement the visualizations used in Matplotlib, Tableau was used to create more meaningful visualizations in a shorter amount of time</li>
                           <li>Lastly, created a python notebook using Jupyter Notebook that detailed the steps that were taken throughout the analysis, the results of the analysis, and a discussion of what the results entailed.</li>
-                        </ul>
-                    </p>
-                  
+                      </ul>
+                      </p>
               </div>
           </div>
       </li>
@@ -171,14 +227,12 @@
                   </center>
                       <p class="card__text">
                           Constructed a relational database and ERD using normalization in MySQL filled with hypothetical data.
-                      
                         <ul class="circle-list">
                           <li>Worked with a 3-student team to create a working database and developed nine tables that were linked to one another through primary and foreign keys;</li>
                           <li>MySQL Workbench was used to create the database and to populate it with data we used Microsoft Excel.  Once the data was completed, the team extracted it in a csv format and uploaded it to MySQL Workbench; and</li>
                           <li>Lastly, to test that the database was working, we came up with several SQL queries to ensure that all aspects of the database were working.</li>
                         </ul>
-                    </p>
-                  
+                      </p>
               </div>
           </div>
       </li>
