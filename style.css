@@ -64,7 +64,6 @@ margin-right: auto;
 .link-to {
   float: right;
   font-size: 20px;
-  color: #E21833;
 }
 
 .link-to a {
@@ -216,7 +215,7 @@ width: 100%;
   font-size: 50px;
 }
 
-.far, .fab {
+.far, .fab, .fas{
   color:black;
   padding-right: 30px;
 }
@@ -233,5 +232,14 @@ width: 100%;
 
 .fa-envelope:hover {
   color: #d44638;
+  transition: 0.3s;
+}
+.fa-poll:hover {
+  color: green;
+  transition: 0.3s;
+}
+
+.fa-medium:hover {
+  color: grey;
   transition: 0.3s;
 }
